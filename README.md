@@ -7,6 +7,6 @@ MSW server is being configured at `jest.setup.js` which gets executed once for e
 
 Do `yarn install` and execute `node --expose-gc ./node_modules/.bin/jest --silent  --runInBand --detectOpenHandles --logHeapUsage`
 
-You can see the below reference image,
+You can check the below reference image to see memory is constantly increasing,
 
 ![alt JestRunWithLeak](https://user-images.githubusercontent.com/6211920/116098408-ae20fe80-a6c8-11eb-8a4a-3a6d237c9e2d.png)
