@@ -4,10 +4,10 @@ describe("JeevesTicketDetailsComponent", () => {
     const resp = await fetch(
       "http://local.test.com/getBooks"
     );
-    console.log('Response --' + JSON.stringify(resp));
-    // expect(resp).toEqual({
-    //   title: "Lord of the Rings",
-    //   author: "J. R. R. Tolkien",
-    // })
+    const actualData = await resp.json();
+    expect(actualData).toEqual({
+      title: "Lord of the Rings",
+      author: "J. R. R. Tolkien",
+    })
   });
 });
